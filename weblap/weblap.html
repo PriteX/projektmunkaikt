@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendezési algoritmusok</title>
+    <h1>Rendezési algoritmusok</h1>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Az Algoritmus Leírása</h1>
+    <p><ul>
+        <li>Első lépésben a kód megnyitja a "second.txt" nevű szövegfájlt olvasásra.</li>
+        <li>Az olvasott sorból eltávolítja a kettős idézőjeleket ('), majd felosztja a pontosvessző (;) karakterek mentén, létrehozva ezzel egy listát, amit 'x' változó tárol.</li>
+        <li>A 'for' ciklus segítségével végigmegyünk az 'x' listán, és minden elemre megvizsgáljuk, hogy az szám-e a 'isnumeric()' függvény segítségével. Ha az elem szám, akkor egy 'db' nevű változót növelünk eggyel.</li>
+        <li>Ha a 'db' értéke végül megegyezik az 'x' lista hosszával, akkor azt jelenti, hogy minden elem szám, és kiírjuk a "Minden adat szám" üzenetet.</li>
+        <li>Ezt követően két rendezési algoritmust definiálunk, a buborékrendezést és az inverz buborékrendezést.</li>
+        <li>A felhasználótól bekérünk egy választást, hogy növekvő vagy csökkenő sorrendben szeretné rendezni a listát.</li>
+        <li>A választástól függően alkalmazzuk a megfelelő rendezési algoritmust, majd kiírjuk az eredményt.</li>
+    </ul></p>
+
+    <h2>Hatékonyság és Tárigény</h2>
+    <p><ul>
+        <li>Az adatok beolvasása és elemzése az "x" listába egy egyszerű lineáris időkomplexitással (O(n)) rendelkező művelet, ahol 'n' a beolvasott sorok számától függ.</li>
+        <li>A buborékrendezés és az inverz buborékrendezés algoritmusok közepesen hatékonyak, az időkomplexitásuk O(n^2), tehát a lista hosszának négyzetével arányosan nő a szükséges műveletek száma.</li>
+        <li>A program további memóriát csak a 'x' változónak és néhány egyéb kis változónak használ fel, így a tárigénye alacsony.</li>
+    </ul></p>
+
+    <h2>Implementáció</h2>
+    <p>A kód először megnyitja a "second.txt" nevű szövegfájlt olvasásra, majd beolvassa az első sorát, eltávolítja a kettős idézőjeleket és felosztja a ';' karakter mentén egy listába. Ezután egy 'for' ciklusban végigiterálunk az elemeken, és minden elemet megvizsgálunk, hogy szám-e. Ha szám, akkor egy 'db' változót növelünk. Ha minden elem szám volt, akkor kiírjuk a "Minden adat szám" üzenetet. Majd definiálunk két rendezési algoritmust, a buborékrendezést és az inverz buborékrendezést. A felhasználótól bekérjük, hogy növekvő vagy csökkenő sorrendben rendezze a listát. A választástól függően alkalmazzuk a megfelelő rendezési algoritmust, majd kiírjuk az eredményt.</p>
+    <br>
+    <p>A kód hatékonyabbá tehető lenne, ha egyetlen buborékrendezési algoritmust használna mindkét esetben, és az algoritmust paraméterként kapná meg a rendezési irány függvényében. Ezzel elkerülhető lenne a kód ismétlődése és javítható lenne a karbantarthatóság.</p>
+    <pre><code>
+
+    </code></pre>
+
+    <h2>Szemléltető Ábra</h2>
+    <img src="szemlelto_abra.png" alt="Rendezési Algoritmus Szemléltetése" width="50%">
+
+    <h2>Források</h2>
+    <ul>
+        <li><a href="https://chat.openai.com">Open Ai</a></li>
+        <li><a href="https://www.w3schools.com/python/">w3schools</a></li>
+        <li><a href="https://realpython.com/">Real python</a></li>
+        
+    </ul>
+</body>
+</html>
